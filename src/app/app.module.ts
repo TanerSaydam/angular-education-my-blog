@@ -11,6 +11,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { FooterComponent } from './components/layouts/footer/footer.component';
 import { HeaderComponent } from './components/layouts/header/header.component';
 import { NavbarComponent } from './components/layouts/navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
+import { AuthService } from './services/auth.service';
+import { BlogsComponent } from './components/blogs/blogs.component';
+import { BlogDetailComponent } from './components/blogs/blog-detail/blog-detail.component';
+import { BlogAddComponent } from './components/blogs/blog-add/blog-add.component';
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,13 +28,19 @@ import { NavbarComponent } from './components/layouts/navbar/navbar.component';
     RegisterComponent,
     FooterComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    BlogsComponent,
+    BlogDetailComponent,
+    BlogAddComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    AngularEditorModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

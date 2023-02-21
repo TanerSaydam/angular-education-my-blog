@@ -1,7 +1,7 @@
 <nav id="navbar-main"
     class="navbar navbar-main navbar-expand-lg bg-white navbar-light position-sticky top-0 shadow py-2">
     <div class="container">
-        <a class="navbar-brand mr-lg-5">
+        <a class="navbar-brand mr-lg-5" routerLink="/">
             <img src="./assets/img/brand/{{site.icon}}">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
@@ -27,19 +27,19 @@
             </div>
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                    <a routerLink="/blogs" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">
                         <i class="ni ni-ui-04 d-lg-none"></i>
                         <span class="nav-link-inner--text">Blog Yazılarım</span>
                     </a>                  
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                    <a  class="nav-link">
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text">Hakkımda</span>
                     </a>                    
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                    <a class="nav-link">
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text">İletişim</span>
                     </a>                    
@@ -55,8 +55,11 @@
                     </a>
                 </li>  
                 <li class="nav-item">
-                    <a class="btn btn-outline-primary" href="https://www.creative-tim.com/builder/argon" target="_blank">
+                    <a class="btn btn-outline-primary" routerLink="/login" *ngIf="!_auth.isLogin">
                       <span class="nav-link-inner--text">Login/Register</span>
+                    </a>
+                    <a class="btn btn-outline-danger" (click)="_auth.logout()" *ngIf="_auth.isLogin">
+                        <span class="nav-link-inner--text">Logout</span>
                     </a>
                 </li>             
             </ul>

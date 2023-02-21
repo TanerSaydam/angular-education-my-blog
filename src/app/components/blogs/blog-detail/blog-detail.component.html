@@ -1,0 +1,17 @@
+<div class="section section-components text-center">
+    <div class="card">
+        <div class="card-header">
+            <h1>{{blog.title}}</h1>
+            <p>{{blog.createdDate | date:'dd.MM.yyyy HH:mm:ss'}}</p>
+        </div>
+        <div class="card-body">
+            <p [innerHTML]="blog.content"></p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h1>Yorumlar</h1>
+        </div>
+    </div>
+</div>

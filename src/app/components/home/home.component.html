@@ -1,12 +1,17 @@
+<app-header [socialMedias]="socialMedias"></app-header>       
+
 <div class="section section-components text-center">
-    <div class="card card-style" >
+    <h1 class="text-primary">Blog Yazılarım</h1>
+    <hr>
+    <div class="card card-style mt-4" *ngFor="let blog of _blog.blogs">
         <div class="card-header">
-            <h2>Başlık</h2>          
+            <h2>{{blog.title}}</h2>          
         </div>
-        <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus laboriosam dicta veritatis fugit ad ducimus, quidem provident perferendis, nulla repudiandae? In, velit veritatis. Nesciunt qui quaerat dolore ipsa laboriosam.
+        <div class="card-body">      
+            <p class="card-content" [innerHtml]="blog.content"></p>     
+            <a routerLink="/blogs/{{blog.id}}">Devamı...</a>
             <br>
-            <span class="float-right" style="font-size:small">Oluşturulma Tarih: 21.02.2023 20:34</span>
+            <span class="float-right" style="font-size:small">Oluşturulma Tarih: {{blog.createdDate | date: 'dd.MM.yyyy HH:mm:ss'}}</span>
         </div>
     </div>   
 </div>

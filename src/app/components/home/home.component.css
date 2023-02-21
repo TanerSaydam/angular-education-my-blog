@@ -4,3 +4,9 @@
     margin-right: 10%;
     box-shadow: 1px 1px 5px ccc;
 }
+
+.card-content{
+    height: 20px;   
+    text-overflow:clip;
+    overflow: hidden;    
+}
