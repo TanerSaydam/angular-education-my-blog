@@ -1,0 +1,29 @@
+<footer class="footer has-cards">
+       
+    <div class="container">
+        <div class="row row-grid align-items-center my-md">
+            <div class="col-lg-6">
+                <h3 class="text-primary font-weight-light mb-2">Sitemi ziyaret ettiğiniz için teşekkürler!</h3>
+                <h4 class="mb-0 font-weight-light">Sosyal medya hesaplarımdan benimle iletişime geçebilirsiniz</h4>
+            </div>
+            <div class="col-lg-6 text-lg-center btn-wrapper">
+                <a 
+                    *ngFor="let social of socialMedias"
+                    target="_blank" 
+                    href="{{social.link}}" rel="nofollow"
+                    class="btn btn-icon-only {{social.btnClass}} rounded-circle"
+                    title="{{social.name}}">
+                    <span class="btn-inner--icon"><i class="{{social.icon}}"></i></span>
+                </a>                   
+            </div>
+        </div>
+        <hr>
+        <div class="row align-items-center justify-content-md-between">
+            <div class="col-md-6">
+                <div class="copyright">
+                    &copy; 2023 <a class="text-primary" style="cursor:pointer"> - Tüm hakları saklıdır</a>.
+                </div>
+            </div>                
+        </div>
+    </div>
+</footer>

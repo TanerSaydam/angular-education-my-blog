@@ -1,0 +1,8 @@
+<title>{{site.title}}</title>
+
+<app-navbar [socialMedias]="socialMedias" [site]="site"></app-navbar>
+<div class="wrapper">
+    <app-header [socialMedias]="socialMedias"></app-header>       
+    <router-outlet></router-outlet>    
+    <app-footer [socialMedias]="socialMedias"></app-footer>
+</div>

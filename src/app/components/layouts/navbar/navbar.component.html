@@ -1,0 +1,65 @@
+<nav id="navbar-main"
+    class="navbar navbar-main navbar-expand-lg bg-white navbar-light position-sticky top-0 shadow py-2">
+    <div class="container">
+        <a class="navbar-brand mr-lg-5">
+            <img src="./assets/img/brand/{{site.icon}}">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar_global">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-brand">
+                        <a href="./index.html">
+                            <img src="./assets/img/brand/blue.png">
+                        </a>
+                    </div>
+                    <div class="col-6 collapse-close">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+                            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                        <i class="ni ni-ui-04 d-lg-none"></i>
+                        <span class="nav-link-inner--text">Blog Yazılarım</span>
+                    </a>                  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                        <i class="ni ni-collection d-lg-none"></i>
+                        <span class="nav-link-inner--text">Hakkımda</span>
+                    </a>                    
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                        <i class="ni ni-collection d-lg-none"></i>
+                        <span class="nav-link-inner--text">İletişim</span>
+                    </a>                    
+                </li>
+            </ul>
+            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                <li class="nav-item" *ngFor="let social of socialMedias">
+                    <a                    
+                     class="nav-link nav-link-icon" href="{{social.link}}" target="_blank"
+                        data-toggle="tooltip" title="{{social.name}}">
+                        <i class="{{social.icon}}"></i>
+                        <span class="nav-link-inner--text d-lg-none">{{social.name}}</span>
+                    </a>
+                </li>  
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary" href="https://www.creative-tim.com/builder/argon" target="_blank">
+                      <span class="nav-link-inner--text">Login/Register</span>
+                    </a>
+                </li>             
+            </ul>
+        </div>
+    </div>
+</nav>
