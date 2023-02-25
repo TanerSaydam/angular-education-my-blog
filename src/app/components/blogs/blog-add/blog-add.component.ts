@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
 import { BlogModel } from 'src/app/models/blog.model';
 import { BlogService } from 'src/app/services/blog.service';
@@ -13,14 +14,16 @@ export class BlogAddComponent {
   blog: BlogModel = new BlogModel();
 
   editorConfig = EditorConfig;
-  
+
   constructor(
     public _blog: BlogService
-  ){}
+  ) { }
 
-  add(){
-    this._blog.add(this.blog, ()=> {
-      this.blog = new BlogModel();
-    });    
+  add(form: NgForm) {
+    if (form.valid) {
+      this._blog.add(this.blog, () => {
+        this.blog = new BlogModel();
+      });
+    }
   }
 }

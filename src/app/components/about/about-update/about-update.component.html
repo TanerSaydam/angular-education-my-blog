@@ -1,17 +1,38 @@
 <div class="section">
-    <div class="form-group">
-        <label for="title">Başlık</label>
-        <input type="text" name="title" [(ngModel)]="about.title" id="title" class="form-control">
-    </div>
-    <div class="form-group mt-1">
-        <label for="content">İçerik</label>
-        <angular-editor [config]="editorConfig" [placeholder]="'Enter text here...'" [(ngModel)]="about.content"></angular-editor>
-
-    </div>
-    <div class="form-group mt-1">
-        <button class="btn btn-outline-warning w-100" (click)="update()">
-            <i class="fa fa-save"></i>
-            Güncelle
-        </button>
-    </div>
+    <form #updateForm="ngForm" (ngSubmit)="update(updateForm)">
+        <div class="form-group">
+            <label for="title">Başlık</label>
+            <input
+              type="text"
+              name="title"
+              required
+              minlength="3"
+              [(ngModel)]="about.title"
+              id="title"
+              class="form-control"
+              #title
+              [appValid]="title.validity.valid">
+            <div class="invalid-feedback" *ngIf="!title.validity.valid">
+                Başlık alanı zorunludur!
+            </div>
+        </div>
+        <div class="form-group mt-1">
+            <label for="content">İçerik</label>
+            <angular-editor
+              [config]="editorConfig"
+              [placeholder]="'Enter text here...'"
+              [(ngModel)]="about.content"
+              name="content"
+              #content
+              required
+              minlength="30">
+            </angular-editor> 
+        </div>
+        <div class="form-group mt-1">
+            <button type="submit" class="btn btn-outline-warning w-100" [disabled]="!updateForm.valid">
+                <i class="fa fa-save"></i>
+                Güncelle
+            </button>
+        </div>
+    </form>
 </div>

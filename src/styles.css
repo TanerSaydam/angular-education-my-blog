@@ -7,3 +7,18 @@ a{
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.is-invalid{
+    border: 1px solid red;
+}
+
+.is-valid{
+    border: 1px solid green;
+}
+
+.invalid-feedback {    
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: red;
+}

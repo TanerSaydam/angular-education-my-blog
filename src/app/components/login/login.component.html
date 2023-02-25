@@ -21,7 +21,7 @@
                 <small>Giriş yapmak için bilgileri doldurun!</small>
               </div>
               <!-- Form Elementi -->
-              <form role="form" (ngSubmit)="_auth.login(loginModel)">
+              <form #loginForm="ngForm" role="form" (ngSubmit)="_auth.login(loginForm)">
                 <div class="form-group mb-3">
                   <div class="input-group input-group-alternative">
                     <div class="input-group-prepend">
@@ -29,10 +29,17 @@
                     </div>
                     <input                    
                       class="form-control is-valid"
-                      [(ngModel)]="loginModel.email"
-                      [ngModelOptions]="{standalone:true}"
-                      placeholder="Email"
-                      type="email">                    
+                      ngModel
+                      name="email"
+                      placeholder="Email"                      
+                      required
+                      [appValid]="email.validity.valid"
+                      minlength="3"
+                      #email
+                      type="text">     
+                    <div class="invalid-feedback" *ngIf="!email.validity.valid">
+                        Mail/Kullanıcı Adı zorunludur!
+                    </div>               
                   </div>
                 </div>
                 <div class="form-group focused">
@@ -40,11 +47,22 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                     </div>
-                    <input class="form-control" [(ngModel)]="loginModel.password" [ngModelOptions]="{standalone:true}" placeholder="Password" type="password">
+                    <input
+                      class="form-control"
+                      ngModel
+                      name="password"
+                      required 
+                      #password    
+                      [appValid]="password.validity.valid"                 
+                      placeholder="Password"
+                      type="password">
+                    <div class="invalid-feedback" *ngIf="!password.validity.valid">
+                        Şifre alanı zorunludur!
+                    </div> 
                   </div>
                 </div>                
                 <div class="text-center">
-                  <button type="submit" [disabled]="checkFormIsValid()" class="btn btn-primary my-4">Giriş Yap</button>
+                  <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary my-4">Giriş Yap</button>
                 </div>
               </form>
               <!-- Form Elementi -->

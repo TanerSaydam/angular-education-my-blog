@@ -15,6 +15,14 @@
       "userName": "tsaydam2",
       "isAdmin": false,
       "id": 1
+    },
+    {
+      "email": "taner@saydam.com",
+      "password": "1",
+      "name": "Taner Saydam",
+      "userName": "tanersaydam",
+      "isAdmin": false,
+      "id": 2
     }
   ],
   "blogs": [

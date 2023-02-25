@@ -21,7 +21,7 @@
                             <small>Kayıt için bilgileri doldurun!</small>
                         </div>
                         <!-- Form Elementi -->
-                        <form role="form" (ngSubmit)="_auth.register(register)">
+                        <form #registerForm="ngForm" role="form" (ngSubmit)="_auth.register(registerForm)">
                             <div class="form-group mb-3">
                                 <div class="input-group input-group-alternative">
                                     <div class="input-group-prepend">
@@ -29,10 +29,17 @@
                                     </div>
                                     <input
                                       class="form-control"
-                                      [(ngModel)]="register.name"
-                                      [ngModelOptions]="{standalone:true}"
+                                      ngModel
+                                      name="name"
+                                      required
+                                      minlength="3"
+                                      #name
+                                      [appValid]="name.validity.valid"
                                       placeholder="Adınız Soyadınız"
                                       type="text">
+                                    <div class="invalid-feedback" *ngIf="!name.validity.valid">
+                                        Ad alanı zorunludur!
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group mb-3">
@@ -42,10 +49,17 @@
                                     </div>
                                     <input
                                       class="form-control"
-                                      [(ngModel)]="register.userName"
-                                      [ngModelOptions]="{standalone:true}"
+                                      ngModel
+                                      name="userName"
                                       placeholder="Kullanıcı adınız"
+                                      required
+                                      minlength="3"
+                                      #userName
+                                      [appValid]="userName.validity.valid"
                                       type="text">
+                                      <div class="invalid-feedback" *ngIf="!userName.validity.valid"> 
+                                        Kullanıcı adı alanı zorunludur!
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group mb-3">
@@ -55,10 +69,17 @@
                                     </div>
                                     <input
                                       class="form-control"
-                                      [(ngModel)]="register.email"
-                                      [ngModelOptions]="{standalone:true}"
+                                      ngModel
+                                      name="email"
+                                      #email
+                                      required
+                                      email
+                                      [appValid]="email.validity.valid"
                                       placeholder="Email"
                                       type="email">
+                                    <div class="invalid-feedback" *ngIf="!email.validity.valid">
+                                        Mail alanı zorunludur!
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group focused">
@@ -68,14 +89,20 @@
                                     </div>
                                     <input
                                       class="form-control"
-                                      [(ngModel)]="register.password"
-                                      [ngModelOptions]="{standalone:true}"
+                                      ngModel
+                                      name="password"
+                                      #password
+                                      required
+                                      [appValid]="password.validity.valid"
                                       placeholder="Password"
                                       type="password">
+                                      <div class="invalid-feedback" *ngIf="!password.validity.valid">
+                                        Şifre alanı zorunludur!
+                                    </div>
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button type="submit" [disabled]="checkFormIsValid()" class="btn btn-primary my-4">
+                                <button type="submit" [disabled]="!registerForm.valid" class="btn btn-primary my-4">
                                     Kayıt Ol 
                                 </button>
                             </div>

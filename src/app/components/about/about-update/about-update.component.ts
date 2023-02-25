@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { AboutModel } from 'src/app/models/about.model';
 import { AboutService } from 'src/app/services/about.service';
 import { EditorConfig } from 'src/app/settings/editor';
@@ -20,8 +21,9 @@ export class AboutUpdateComponent {
     this.get();
   }
 
-  update(){
-    this._about.update(this.about,()=>{});
+  update(form: NgForm){
+    if(form.valid)    
+      this._about.update(this.about,()=>{});
   }
 
   get(){
