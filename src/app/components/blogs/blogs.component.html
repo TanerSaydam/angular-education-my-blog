@@ -13,7 +13,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let blog of _blog.blogs let i = index">
+        <tr *ngFor="let blog of blogs let i = index">
             <td>{{i +1}}</td> 
             <td [innerText]="blog.title"></td>
             <td [innerText]="blog.createdDate | date: 'dd.MM.yyyy HH:mm:ss'"></td>

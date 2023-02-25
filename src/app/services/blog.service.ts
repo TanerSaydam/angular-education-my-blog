@@ -1,31 +1,37 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { BlogModel } from '../models/blog.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class BlogService {
+export class BlogService { 
+  apiUrl: string = "http://localhost:3000/blogs";
+  constructor(
+    private _http: HttpClient,
+    private _toastr: ToastrService
+  ) {}
 
-  blogs: BlogModel[] = [];
-  constructor() { 
-    for (let i = 0; i < 10; i++) {
-      let model:BlogModel = {
-        id: i,
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus laboriosam dicta veritatis fugit ad ducimus, quidem provident perferendis, nulla repudiandae? In, velit veritatis. Nesciunt qui quaerat dolore ipsa laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus laboriosam dicta veritatis fugit ad ducimus, quidem provident perferendis, nulla repudiandae? In, velit veritatis. Nesciunt qui quaerat dolore ipsa laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus laboriosam dicta veritatis fugit ad ducimus, quidem provident perferendis, nulla repudiandae? In, velit veritatis. Nesciunt qui quaerat dolore ipsa laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus laboriosam dicta veritatis fugit ad ducimus, quidem provident perferendis, nulla repudiandae? In, velit veritatis. Nesciunt qui quaerat dolore ipsa laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus laboriosam dicta veritatis fugit ad ducimus, quidem provident perferendis, nulla repudiandae? In, velit veritatis. Nesciunt qui quaerat dolore ipsa laboriosam.",
-        title: "Başlık " + i,
-        createdDate: new Date().toString()
-      };
-
-      this.blogs.push(model);
-    } 
+  getAll(){
+   return this._http.get<BlogModel[]>(this.apiUrl)
   }
 
-  delete(id: number){
-    let index = this.blogs.findIndex(p=> p.id == id);
-    this.blogs.splice(index,1);
+  getById(id: number){
+    return this._http.get<BlogModel[]>(`${this.apiUrl}?id=${id}`);
   }
 
-  add(model: BlogModel){
-    this.blogs.push(model);
+  add(model: BlogModel, callBack: ()=> void){
+    this._http.post<BlogModel>(this.apiUrl,model).subscribe(res=>{
+      this._toastr.success("Blog kaydı başarıyla tamamlandı!");
+      callBack();
+    });
+  }  
+
+  delete(id: number, callBack: ()=> void){
+    this._http.delete(`${this.apiUrl}/${id}`).subscribe(res=>{
+      callBack();
+      this._toastr.info("Blog yazısı başarıyla silindi!");
+    });
   }
 }

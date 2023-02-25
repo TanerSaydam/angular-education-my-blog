@@ -15,19 +15,14 @@ export class BlogDetailComponent {
   constructor(
     private _activated: ActivatedRoute,
     private _blog: BlogService
-  ){
-    this.blog = {
-      title: "asdasdasd",
-      content: "asdasdsad",
-      createdDate: new Date().toString(),
-      id: 0 
-    }
-
+  ){    
     this._activated.params.subscribe(res=>{
       this.blogId = res["id"];
-
-      let index = this._blog.blogs.findIndex(p=> p.id == this.blogId);
-      this.blog = this._blog.blogs[index];
+      this._blog.getById(this.blogId).subscribe(res=>{
+        this.blog = res[0];
+      });
+      //let index = this._blog.blogs.findIndex(p=> p.id == this.blogId);
+      //this.blog = this._blog.blogs[index];
     })
   }
 }

@@ -1,0 +1,11 @@
+<div class="section">
+<div class="card">
+    <button routerLink="/about/update" *ngIf="_auth.isAdmin" class="btn btn-outline-warning">Güncelle</button>
+    <div class="card-header">
+        <h1 [innerText]="about.title"></h1>
+    </div>
+    <div class="card-body">
+        <p [innerHTML]="about.content"></p>
+    </div>
+</div>
+</div>

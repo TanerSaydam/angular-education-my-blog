@@ -1,1 +1,89 @@
-<p>register works!</p>
+<section class="section section-shaped section-lg">
+    <div class="shape shape-style-1 bg-gradient-default">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="container pt-lg-7">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="card bg-secondary shadow border-0">
+                    <div class="card-header">
+                        <h1>Register Page</h1>
+                      </div>         
+                    <div class="card-body px-lg-5 py-lg-5">
+                        <div class="text-center text-muted mb-4">
+                            <small>Kayıt için bilgileri doldurun!</small>
+                        </div>
+                        <!-- Form Elementi -->
+                        <form role="form" (ngSubmit)="_auth.register(register)">
+                            <div class="form-group mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input
+                                      class="form-control"
+                                      [(ngModel)]="register.name"
+                                      [ngModelOptions]="{standalone:true}"
+                                      placeholder="Adınız Soyadınız"
+                                      type="text">
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input
+                                      class="form-control"
+                                      [(ngModel)]="register.userName"
+                                      [ngModelOptions]="{standalone:true}"
+                                      placeholder="Kullanıcı adınız"
+                                      type="text">
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                    </div>
+                                    <input
+                                      class="form-control"
+                                      [(ngModel)]="register.email"
+                                      [ngModelOptions]="{standalone:true}"
+                                      placeholder="Email"
+                                      type="email">
+                                </div>
+                            </div>
+                            <div class="form-group focused">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                    </div>
+                                    <input
+                                      class="form-control"
+                                      [(ngModel)]="register.password"
+                                      [ngModelOptions]="{standalone:true}"
+                                      placeholder="Password"
+                                      type="password">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" [disabled]="checkFormIsValid()" class="btn btn-primary my-4">
+                                    Kayıt Ol 
+                                </button>
+                            </div>
+                        </form>
+                        <!-- Form Elementi -->
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+</section>

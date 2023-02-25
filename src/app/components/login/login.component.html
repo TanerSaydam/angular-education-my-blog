@@ -12,23 +12,13 @@
     <div class="container pt-lg-7">
       <div class="row justify-content-center">
         <div class="col-lg-5">
-          <div class="card bg-secondary shadow border-0">
-            <div class="card-header bg-white pb-5">
-              <div class="text-muted text-center mb-3"><small>Sign in with</small></div>
-              <div class="btn-wrapper text-center">
-                <a href="#" class="btn btn-neutral btn-icon">
-                  <span class="btn-inner--icon"><img src="../assets/img/icons/common/github.svg"></span>
-                  <span class="btn-inner--text">Github</span>
-                </a>
-                <a href="#" class="btn btn-neutral btn-icon">
-                  <span class="btn-inner--icon"><img src="../assets/img/icons/common/google.svg"></span>
-                  <span class="btn-inner--text">Google</span>
-                </a>
-              </div>
-            </div>
+          <div class="card bg-secondary shadow border-0">   
+            <div class="card-header">
+              <h1>Login Page</h1>
+            </div>         
             <div class="card-body px-lg-5 py-lg-5">
               <div class="text-center text-muted mb-4">
-                <small>Or sign in with credentials</small>
+                <small>Giriş yapmak için bilgileri doldurun!</small>
               </div>
               <!-- Form Elementi -->
               <form role="form" (ngSubmit)="_auth.login(loginModel)">
@@ -37,7 +27,12 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" [(ngModel)]="loginModel.email" [ngModelOptions]="{standalone:true}" placeholder="Email" type="email">
+                    <input                    
+                      class="form-control is-valid"
+                      [(ngModel)]="loginModel.email"
+                      [ngModelOptions]="{standalone:true}"
+                      placeholder="Email"
+                      type="email">                    
                   </div>
                 </div>
                 <div class="form-group focused">
@@ -47,13 +42,9 @@
                     </div>
                     <input class="form-control" [(ngModel)]="loginModel.password" [ngModelOptions]="{standalone:true}" placeholder="Password" type="password">
                   </div>
-                </div>
-                <div class="custom-control custom-control-alternative custom-checkbox">
-                  <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                  <label class="custom-control-label" for=" customCheckLogin"><span>Remember me</span></label>
-                </div>
+                </div>                
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary my-4">Sign in</button>
+                  <button type="submit" [disabled]="checkFormIsValid()" class="btn btn-primary my-4">Giriş Yap</button>
                 </div>
               </form>
               <!-- Form Elementi -->
@@ -61,10 +52,10 @@
           </div>
           <div class="row mt-3">
             <div class="col-6">
-              <a href="#" class="text-light"><small>Forgot password?</small></a>
+              <a class="text-light"><small>Şifremi unuttum?</small></a>
             </div>
             <div class="col-6 text-right">
-              <a href="#" class="text-light"><small>Create new account</small></a>
+              <a class="text-light" routerLink="/register"><small>Yeni kayıt</small></a>
             </div>
           </div>
         </div>

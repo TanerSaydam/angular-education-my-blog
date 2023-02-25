@@ -1,9 +1,9 @@
 <app-header [socialMedias]="socialMedias"></app-header>       
 
 <div class="section section-components text-center">
-    <h1 class="text-primary">Blog Yazılarım</h1>
+    <h1 class="text-primary">Blog Yazılarım</h1>    
     <hr>
-    <div class="card card-style mt-4" *ngFor="let blog of _blog.blogs">
+    <div class="card card-style mt-4" *ngFor="let blog of blogs">
         <div class="card-header">
             <h2>{{blog.title}}</h2>          
         </div>

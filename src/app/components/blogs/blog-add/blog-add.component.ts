@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
 import { BlogModel } from 'src/app/models/blog.model';
 import { BlogService } from 'src/app/services/blog.service';
+import { EditorConfig } from 'src/app/settings/editor';
 
 @Component({
   selector: 'app-blog-add',
@@ -11,16 +12,15 @@ import { BlogService } from 'src/app/services/blog.service';
 export class BlogAddComponent {
   blog: BlogModel = new BlogModel();
 
-  editorConfig: AngularEditorConfig = {
-      height: '350px',      
-  }
+  editorConfig = EditorConfig;
   
   constructor(
     public _blog: BlogService
   ){}
 
   add(){
-    this._blog.add(this.blog);
-    this.blog = new BlogModel();
+    this._blog.add(this.blog, ()=> {
+      this.blog = new BlogModel();
+    });    
   }
 }

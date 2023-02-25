@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { empty } from 'rxjs';
 
 import { LoginModel } from 'src/app/models/login.model';
 import { AuthService } from 'src/app/services/auth.service';
@@ -15,7 +16,11 @@ export class LoginComponent {
     public _auth: AuthService
   ){} 
 
-  writeConsole(){
-    console.log(this.loginModel)
+  checkFormIsValid(){
+    if(this.loginModel.email.length > 3 && this.loginModel.password.length > 3 ){
+      return false
+    }
+
+    return true;
   }
 }

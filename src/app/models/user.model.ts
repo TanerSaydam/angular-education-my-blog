@@ -1,7 +1,6 @@
-export class UserModel{
-    id: number = 0;
-    name: string = "";
-    email: string = "";
-    password: string = "";
-    roles: string[] = [];
+import { RegisterModel } from "./register.model";
+
+export class UserModel extends RegisterModel{
+    id: number = 0;    
+    
 }

@@ -1,0 +1,35 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "Taner Saydam",
+      "email": "tsaydam@gmail.com",
+      "userName": "tsaydam",
+      "password": "1234",
+      "isAdmin": true
+    },
+    {
+      "email": "tsaydam2@gmail.com",
+      "password": "1234",
+      "name": "Taner Saydam",
+      "userName": "tsaydam2",
+      "isAdmin": false,
+      "id": 1
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Deneme 1",
+      "content": "<b>Deneme Blog Yaz&#305;s&#305; 1</b>",
+      "createdDate": "Thu Feb 23 2023 21:31:48 GMT+0300 (GMT+03:00)"
+    }
+  ],
+  "abouts": [
+    {
+      "id": 0,
+      "title": "Hakkımda23",
+      "content": "<p class=\"pe-5\"></p><div><p>Uzun y&#305;llar muhasebecilik yapt&#305;m. &#199;al&#305;&#351;t&#305;&#287;&#305;m firmalara yaz&#305;l&#305;m deste&#287;i verdim. Orada &#246;&#287;rendiklerimi ald&#305;&#287;&#305;m e&#287;itimlerle peki&#351;tirdim ve yaz&#305;l&#305;mc&#305; olarak e&#287;itim verecek seviyeye ula&#351;ana kadar kendimi e&#287;itmeye ve projeye yazmaya devam ettim. <strong>(E&#287;itmen olmak i&#231;in belirledi&#287;im bir ba&#351;lang&#305;&#231; seviyesi vard&#305;, oraya ula&#351;t&#305;ktan sonra e&#287;itmen olmaya karar verdim. &#350;u anda hala bo&#351; vakitlerimde her t&#252;rl&#252; kaynaktan e&#287;itim almaya, yeni &#351;eyler &#246;&#287;renmeye &#231;al&#305;&#351;&#305;yorum. &#214;zellikle T&#252;rk&#231;e kayna&#287;&#305; &#231;ok az olan konularda bolca e&#287;itim &#231;ekmeye &#231;al&#305;&#351;&#305;yorum.)</strong></p><p>&#304;stedi&#287;im seviyeye ula&#351;t&#305;&#287;&#305;m&#305; d&#252;&#351;&#252;nd&#252;&#287;&#252;mde muhasebecili&#287;i b&#305;rakt&#305;m ve &#351;u anda aktif olarak yaz&#305;l&#305;m e&#287;itmenli&#287;i yap&#305;yorum.&#160;<strong>Udemy</strong> ve <strong>Youtube</strong> &#252;zerinde bir&#231;ok e&#287;itim setim mevcut. Ve yenileri de s&#252;rekli gelmeye devam edecek.</p><p><br></p></div><p></p>"
+    }
+  ]
+}

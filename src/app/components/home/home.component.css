@@ -6,7 +6,7 @@
 }
 
 .card-content{
-    height: 20px;   
+    height: 80px;   
     text-overflow:clip;
     overflow: hidden;    
 }
