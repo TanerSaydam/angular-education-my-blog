@@ -2,20 +2,25 @@
    <h1>Blog Listesi</h1>
    <hr>
    <button routerLink="/blogs/add" *ngIf="_auth.isAdmin" class="btn btn-outline-primary">Ekle</button>
+   <div class="form-group col-md-4 float-right">
+    <input type="search" class="form-control" [(ngModel)]="search" placeholder="Aranacak değeri yazın...">
+   </div>
    <table class="table table-bordered">
     <thead>
         <tr>
             <th>#</th>
             <th>Başlık</th>
+            <th>Kategori</th>
             <th>Oluşturulma Tarihi</th>
             <th>İçerik</th>
             <th>İşlemler</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let blog of blogs let i = index">
-            <td>{{i +1}}</td> 
+        <tr *ngFor="let blog of blogs | blog: search | paginate: { itemsPerPage: 3, currentPage: p } let i = index">
+            <th>{{((i + ((p - 1) * 3)) + 1)}}</th>
             <td [innerText]="blog.title"></td>
+            <td [innerText]="blog.category"></td>
             <td [innerText]="blog.createdDate | date: 'dd.MM.yyyy HH:mm:ss'"></td>
             <td [innerText]="blog.content.substring(0,120)"></td>
             <td >
@@ -29,4 +34,5 @@
         </tr>
     </tbody>
    </table>
+   <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>

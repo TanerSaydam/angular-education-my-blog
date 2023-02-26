@@ -11,6 +11,8 @@ import { SwalService } from 'src/app/services/swal.service';
 })
 export class BlogsComponent implements OnInit {
   blogs: BlogModel[] = [];
+  search: string = "";
+  p: number = 1;
   constructor(
     public _auth: AuthService,
     public _blog: BlogService,
@@ -30,11 +32,11 @@ export class BlogsComponent implements OnInit {
   }
 
   delete(id: number){
-    this._swal.toastSwal();
-    // this._swal.callSwal("Sil?","Blog yazısını silmek istiyor musunuz?",()=>{
-    //   this._blog.delete(id, ()=> {
-    //     this.getAll();
-    //   })
-    // })
+    //this._swal.toastSwal();
+    this._swal.callSwal("Sil?","Blog yazısını silmek istiyor musunuz?",()=>{
+      this._blog.delete(id, ()=> {
+        this.getAll();
+      })
+    })
   }
 }

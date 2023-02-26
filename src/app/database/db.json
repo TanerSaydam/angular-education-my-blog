@@ -29,8 +29,149 @@
     {
       "id": 1,
       "title": "Deneme 1",
+      "category": "Genel",
       "content": "<b>Deneme Blog Yaz&#305;s&#305; 1</b>",
       "createdDate": "Thu Feb 23 2023 21:31:48 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 2,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 3,
+      "title": "Genel Yazı",
+      "category": "Genel",
+      "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut purus enim, lobortis ac hendrerit quis, mattis in sem. Vestibulum auctor quam nec sapien accumsan euismod. Aliquam gravida hendrerit efficitur. Pellentesque vestibulum augue ac leo rutrum, a facilisis ex interdum. Etiam cursus odio vehicula euismod euismod. Nam non ornare enim. Proin laoreet dui vitae lorem consequat pretium. Curabitur vel odio purus. Vivamus quis convallis diam, a tincidunt urna.</p><p>Aliquam erat volutpat. Proin luctus condimentum orci, et feugiat quam gravida sed. In ac metus id nibh porttitor facilisis vel sed lectus. Vivamus in vestibulum enim, eu ultrices libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam massa felis, imperdiet iaculis lobortis eu, ornare eu nulla. Curabitur sodales, enim lobortis imperdiet rutrum, ante nunc feugiat ante, ut lobortis tortor elit vitae urna. Nulla tincidunt rutrum est. Proin vel turpis eget augue gravida viverra. Mauris at porttitor leo.</p><p>Fusce at magna vitae urna elementum commodo quis non mi. Vestibulum iaculis odio nec sapien cursus, nec lacinia ante tempus. Nam convallis feugiat justo a mattis. Vivamus nec imperdiet est. Sed feugiat sem nec felis consequat pretium. Aenean a lorem viverra, gravida neque eget, vehicula justo. Donec sit amet leo fringilla, aliquam magna id, porta ex. Sed ut quam lorem. Sed mattis eleifend neque a porttitor. Aliquam ornare ipsum at dui tristique, et finibus est auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p><p>Suspendisse vitae condimentum nibh, sed tincidunt tellus. Quisque imperdiet mi at purus consectetur, vitae convallis purus auctor. Phasellus augue quam, malesuada nec felis ut, lacinia porttitor sem. Nam sit amet faucibus nunc, nec tincidunt elit. Vivamus pharetra nec dolor placerat auctor. Mauris pulvinar sapien quis massa suscipit imperdiet. Vestibulum convallis mattis enim. Integer tempus massa ut ultrices semper. Ut tempus dolor quis tortor pellentesque, eget congue justo varius. Praesent pretium tempor purus, eu elementum ligula consectetur eget. Maecenas consequat vestibulum libero, in vestibulum risus. Sed non est libero. In hac habitasse platea dictumst. Nulla facilisi. Aliquam gravida massa et est luctus tincidunt. Nullam quis viverra urna, lacinia suscipit dui.</p><p>Duis congue tincidunt turpis, at blandit neque convallis eu. Nulla facilisi. Nulla eu tortor tellus. Curabitur condimentum eros at odio aliquet, in tempor enim sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam sed ultrices purus, sed lobortis augue. Vivamus auctor interdum massa sed sollicitudin. Proin interdum neque sed dui viverra, at venenatis lectus gravida.</p>",
+      "createdDate": "Sun Feb 26 2023 11:55:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 4,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 5,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 6,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 7,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 8,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 9,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 10,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 11,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 12,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 13,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 14,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 15,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 16,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 17,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 18,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 19,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 20,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
+    },
+    {
+      "id": 21,
+      "title": "Ağaçlar ve Orman",
+      "category": "Orman",
+      "content": "<p>bilgi payla&#351;&#305;m&#305;n&#305; ama&#231;lamaktad&#305;r. Dergi bu kapsamda &#246;zg&#252;n, g&#252;ndemde olan ve sonu&#231;lar&#305; k&#305;sa s&#252;rede uygulamaya ge&#231;irilebilecek konulara &#246;ncelik vermektedir.</p><p></p><div><span>A&#287;a&#231; ve Orman;</span></div><div><br></div><div><span>- Orman M&#252;hendisli&#287;i,</span></div><div><br></div><div><span>- Orman End&#252;stri M&#252;hendisli&#287;i ve</span></div><div><br></div><div><span>- Peyzaj Mimarl&#305;&#287;&#305;</span></div><div><br></div><div><span>bilimleri ve alt bilimleri ile bu bilimlerle do&#287;rudan veya dolayl&#305; olarak ilgili olan di&#287;er konular&#305; kapsar. Bu kapsamda daha &#246;nce k&#305;smen veya tam metni ba&#351;ka herhangi bir yay&#305;n organ&#305;nda yay&#305;mlanmam&#305;&#351;, sanayinin ve uygulama birimlerinin ilgi ve ihtiya&#231; duydu&#287;u konular yay&#305;na kabul edilecektir.</span></div>",
+      "createdDate": "Sun Feb 26 2023 11:48:16 GMT+0300 (GMT+03:00)"
     }
   ],
   "abouts": [

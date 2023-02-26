@@ -24,6 +24,8 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { AboutComponent } from './components/about/about.component';
 import { AboutUpdateComponent } from './components/about/about-update/about-update.component';
 import { ValidDirective } from './directives/valid.directive';
+import { BlogPipe } from './pipes/blog.pipe';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -40,12 +42,14 @@ import { ValidDirective } from './directives/valid.directive';
     BlogAddComponent,
     AboutComponent,
     AboutUpdateComponent,
-    ValidDirective
+    ValidDirective,
+    BlogPipe
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    NgxPaginationModule,
     BrowserAnimationsModule,
     SweetAlert2Module.forRoot(),
     ToastrModule.forRoot({
