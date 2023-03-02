@@ -20,7 +20,7 @@
               <div class="text-center text-muted mb-4">
                 <small>Giriş yapmak için bilgileri doldurun!</small>
               </div>
-              <!-- Form Elementi -->
+              
               <form #loginForm="ngForm" role="form" (ngSubmit)="_auth.login(loginForm)">
                 <div class="form-group mb-3">
                   <div class="input-group input-group-alternative">
@@ -65,7 +65,7 @@
                   <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary my-4">Giriş Yap</button>
                 </div>
               </form>
-              <!-- Form Elementi -->
+              
             </div>
           </div>
           <div class="row mt-3">

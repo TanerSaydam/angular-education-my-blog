@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { AngularEditorConfig } from '@kolkov/angular-editor';
 import { BlogModel } from 'src/app/models/blog.model';
 import { BlogService } from 'src/app/services/blog.service';
 import { EditorConfig } from 'src/app/settings/editor';

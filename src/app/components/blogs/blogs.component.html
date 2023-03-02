@@ -24,7 +24,7 @@
             <td [innerText]="blog.createdDate | date: 'dd.MM.yyyy HH:mm:ss'"></td>
             <td [innerText]="blog.content.substring(0,120)"></td>
             <td >
-                <button routerLink="/blogs/{{blog.id}}" class="btn btn-outline-primary btn-sm">
+                <button routerLink="/blogs/detail/{{blog.id}}" class="btn btn-outline-primary btn-sm">
                     <i class="fa fa-eye"></i>                    
                 </button>
                 <button *ngIf="_auth.isAdmin" (click)="delete(blog.id)" class="btn btn-outline-danger btn-sm mx-1">
