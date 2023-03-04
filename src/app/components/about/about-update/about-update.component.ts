@@ -1,5 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { DirectivesModule } from 'src/app/directives/directives.module';
 import { AboutModel } from 'src/app/models/about.model';
 import { AboutService } from 'src/app/services/about.service';
 import { EditorConfig } from 'src/app/settings/editor';
@@ -7,7 +11,15 @@ import { EditorConfig } from 'src/app/settings/editor';
 @Component({
   selector: 'app-about-update',
   templateUrl: './about-update.component.html',
-  styleUrls: ['./about-update.component.css']
+  styleUrls: ['./about-update.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    FormsModule,
+    AngularEditorModule,
+    DirectivesModule,
+    RouterModule
+  ]
 })
 export class AboutUpdateComponent {
   editorConfig = EditorConfig;

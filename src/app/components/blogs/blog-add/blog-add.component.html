@@ -37,9 +37,7 @@
           [config]="editorConfig"
           [placeholder]="'Enter text here...'"
           [(ngModel)]="blog.content"
-          name="content"
-          required
-          minlength="30"></angular-editor>
+          name="content"></angular-editor>
     </div>
     <div class="form-group mt-1">
         <button class="btn btn-outline-primary w-100" [disabled]="!addForm.valid">

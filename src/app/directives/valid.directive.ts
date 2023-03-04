@@ -1,7 +1,8 @@
 import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 
 @Directive({
-  selector: '[appValid]'
+  selector: '[appValid]',
+  standalone: true
 })
 export class ValidDirective {
 

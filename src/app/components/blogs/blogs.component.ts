@@ -1,5 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { BlogModel } from 'src/app/models/blog.model';
+import { BlogPipe } from 'src/app/pipes/blog.pipe';
 import { AuthService } from 'src/app/services/auth.service';
 import { BlogService } from 'src/app/services/blog.service';
 import { SwalService } from 'src/app/services/swal.service';
@@ -7,7 +12,15 @@ import { SwalService } from 'src/app/services/swal.service';
 @Component({
   selector: 'app-blogs',
   templateUrl: './blogs.component.html',
-  styleUrls: ['./blogs.component.css']
+  styleUrls: ['./blogs.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    FormsModule,
+    BlogPipe,
+    RouterModule,
+    NgxPaginationModule
+  ]
 })
 export class BlogsComponent implements OnInit {
   blogs: BlogModel[] = [];

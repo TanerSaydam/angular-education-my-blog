@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BlogModel } from 'src/app/models/blog.model';
@@ -6,7 +7,9 @@ import { BlogService } from 'src/app/services/blog.service';
 @Component({
   selector: 'app-blog-detail',
   templateUrl: './blog-detail.component.html',
-  styleUrls: ['./blog-detail.component.css']
+  styleUrls: ['./blog-detail.component.css'],
+  standalone: true,
+  imports: [CommonModule]
 })
 export class BlogDetailComponent {
   blog: BlogModel = new BlogModel();

@@ -1,8 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { BlogModel } from '../models/blog.model';
 
 @Pipe({
-  name: 'blog'
+  name: 'blog',
+  standalone: true
 })
 export class BlogPipe implements PipeTransform {
 

@@ -1,11 +1,24 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { SiteModel } from 'src/app/models/site.model';
 import { SocialMediaModel } from 'src/app/models/social-media.model';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
   selector: 'app-layouts',
   templateUrl: './layouts.component.html',
-  styleUrls: ['./layouts.component.css']
+  styleUrls: ['./layouts.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterModule,
+    FooterComponent,
+    HeaderComponent,
+    NavbarComponent
+  ]
 })
 export class LayoutsComponent {
   site: SiteModel = new SiteModel();
